@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encuesta McDonals</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <main>
+        <h1 class="text-center">Mc Encuesta</h1>
+    </main>
+    <p id="agradecimiento" class="text-center">Gracias por tomarte el tiempo de responder </p>
+    <form id="survey-form">
+        <div class="form-group">
+            <label id="name-label" for="name">Nombre</label>
+            <input id="name" type="text" class="form-control" name="name" placeholder="Introduzca su nombre completo" required>
+        </input>
+        </div>
+        <div class="form-group">
+            <label id="e-mail-label" for="e-mail">E-mail</label>
+            <input id="e-mail" type="text" class="form-control" name="e-mail" placeholder="Introduzca su correo electronico" required>
+        </input>
+        </div>
+        <div class="form-group">
+            <label id="edad-label" for="edad">Edad(Opcional)</label>
+            <input id="edad" type="text" class="form-control" name="edad" placeholder="Introduzca su edad" >
+        </input>
+        </div>
+        <div class="form-group">
+            <p>¿Qué tan seguido nos visitas?</p>
+            <select id="seleccion" name="concurrencia" class="form-control" required>
+                <option disabled selected value>Seleccione una opción</option>
+                <option value="Casi nunca">Casi nunca</option>
+                <option value="Ocasionalmente">Ocasionalmente</option>
+                <option value="Regularmente">Regularmente</option>
+                <option value="Muy seguido">Muy seguido</option>
+                <option value="Diaramente">Diaramente</option>
+             </select>
+        </div>
+        <div class="form-group">
+            <p>¡Elige la hamburguesa que más te gusta!</p>
+            <label>
+                <input
+                name="hamburguesa-preferida"
+                value="Cuarto de libra"
+                type="radio"
+                class="input-radio"
+                checked
+                /> Cuarto de libra
+            </label>
+            <label>
+                <input
+                name="hamburguesa-preferida"
+                value="Doble queso"
+                type="radio"
+                class="input-radio"
+                
+                /> Doble queso
+            </label>
+            <label flex>
+                <input
+                name="hamburguesa-preferida"
+                value="Big Mc"
+                type="radio"
+                class="input-radio"
+                /> Big Mc
+            </label>
+
+            <div id="menus" class="form-group">
+                <p>¿A cuál de estas opciones crees que le haga falta un nuevo menú?
+                    <br>
+                <span class="clue"> (Elige todas las que creas necesarias) </span></p>
+                <label>
+                    <input
+                    name="nuevo-menu"
+                    value="Desayuno"
+                    type="checkbox"
+                    class="input-checkbox"
+                    />Desayuno
+                </label>
+                <label>
+                    <input
+                    name="nuevo-menu"
+                    value="Almuerzo-Cena"
+                    type="checkbox"
+                    class="input-checkbox"
+                    />Almuerzo-Cena
+                </label>
+                <label>
+                    <input
+                    name="nuevo-menu"
+                    value="Postre"
+                    type="checkbox"
+                    class="input-checkbox"
+                    />Postre
+                </label>
+            
+            </div>
+        </div>
+        <div class="form-group">
+            <p>¿Tienes alguna idea?</p>
+            <textarea
+             id="idea-menu"
+              class="input-textarea"
+            name="idea-menu"
+             placeholder="Escribala por favor!"></textarea>
+                
+          
+        </div>
+        
+        <div class="form-group">
+            <button type="submit" id="submit" class="submit-button">
+            Enviar
+        </button>
+        </div>
+
+    </form>
+</body>
+</html>

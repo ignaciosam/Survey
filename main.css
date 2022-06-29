@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap');
+:root {
+  --color-white: #f3f3f3;
+  --color-darkblue: #1b1b32;
+  --color-darkblue-alpha: rgba(27, 27, 50, 0.8);
+  --color-green: #37af65;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--color-white);
+  margin: 0;
+}
+
+/* mobile friendly alternative to using background-attachment: fixed */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background: var(--color-darkblue);
+  background-image: linear-gradient(
+      115deg,
+      rgba(134, 153, 204, 0.8),
+      rgba(77, 18, 47, 0.7)
+    ),
+    url(https://i.blogs.es/3c815c/thabang-mrx9wqk4w7a-unsplash/1366_2000.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: ;
+}
+
+h1 {
+    margin-top: 50px;
+    font-weight: 400;
+    line-height: 1;
+  }
+  
+#agradecimiento {
+    font-style: italic;
+    font-size: 1rem;
+    
+  }
+  
+  h1,
+  p {
+   
+    margin-bottom: 0.5rem;
+  }
+  p{
+    margin-top: 0;
+  }
+.text-center{
+    text-align:center;
+}
+
+form {
+    background: var(--color-darkblue-alpha);
+    padding: 2.5rem 0.625rem;
+    border-radius: 0.25rem;
+  }
+
+#survey-form{
+    margin:auto;
+    width: 40rem;
+    }
+
+.form-group {
+        margin: -3 auto 1.25rem auto;
+        padding: 0.25rem;
+      }
+.form-control {
+  display: block;
+  width: 100%;
+  height: 2.375rem;
+  padding: 0.375rem 0.75rem;
+  color: #495057;
+  background-color: #fff;
+
+}
+
+.clue {
+    margin-left: 0.25rem;
+    font-size: 0.9rem;
+    color: #e4e4e4;
+}
+
+#menus{
+    margin-top:1.375rem;
+}
+
+label {
+    display: flex;
+    align-items: center;
+    font-size: 1.125rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .submit-button {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    background: var(--color-green);
+    color: inherit;
+    border-radius: 2px;
+    cursor: pointer;
+  }
+
+  input,
+button,
+select,
+textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+
+}
+
+.input-textarea {
+    min-height: 120px;
+    width: 100%;
+    padding: 0.625rem;
+    resize: vertical;
+  }
+
+
+  @media (min-width: 576px) {
+    .container {
+      max-width: 540px;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .container {
+      max-width: 720px;
+    }
+  }
+
+  @media (min-width: 480px) {
+    form {
+      padding: 2.5rem;
+    }
+  }
